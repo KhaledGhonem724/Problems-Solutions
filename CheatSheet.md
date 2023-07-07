@@ -1,7 +1,7 @@
 # PUA ECPC 2023 cheat sheet 
 ## Content
-- [libraries](lib)
-- code templates
+- [libraries](#libraries)
+- [code templates](##code-templates)
   - standard
   - data types define
   - fast input and output
@@ -15,7 +15,7 @@
   - GCD
   - LCM
 
-## libraries `lib` 
+## libraries
 ```
 #include <limits>
 #include <iomanip>
