@@ -1,11 +1,11 @@
 # PUA ECPC 2023 cheat sheet 
 ## Content
 - [libraries](#libraries)
-- [code templates](##code-templates)
-  - standard
-  - data types define
-  - fast input and output
-- important built-in functions 
+- [code templates](#code-templates)
+  - [standard](#standard)
+  - [data types define](#data-types-define)
+  - [fast input and output](#fast-input-and-output)
+- [important built-in functions](important-built--in-functions) 
   - String
   - numbers
   - Arrays
