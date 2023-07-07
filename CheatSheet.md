@@ -5,13 +5,13 @@
   - [standard](#standard)
   - [data types define](#data-types-define)
   - [fast input and output](#fast-input-and-output)
-- [important built-in functions](important-built--in-functions) 
-  - String
-  - numbers
-  - Arrays
-    - basic
-    - advanced
-- important functions 
+- [important built-in functions](#important-built-in-functions) 
+  - [String](#String)
+  - [numbers](#numbers)
+  - [Arrays](#Arrays)
+    - [basic](#basic)
+    - [advanced](#advanced)
+- [important functions](#important-functions) 
   - GCD
   - LCM
 
@@ -58,7 +58,7 @@ cin.tie(0);
 cout.tie(0);
 ```
 
-## important built-in functions 
+## important built in functions 
 ### String
 ```
 to_string(int)
