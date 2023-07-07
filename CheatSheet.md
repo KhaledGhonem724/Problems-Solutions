@@ -14,9 +14,11 @@
 - [important functions](#important-functions) 
   - GCD
   - LCM
+- [background](#background)
+  - [ASCII](#ASCII)
 
 ## libraries
-```
+```cpp
 #include <limits>
 #include <iomanip>
 #include <cstdlib>
@@ -43,16 +45,16 @@
 ```
 ## code templates
 ### standard
-```
+```cpp
 using namespace std;
 ```
 
 ### data types define
-```
+```cpp
 #define ll long long
 ```
 ### fast input and output
-```
+```cpp
 ios_base::sync_with_stdio(0);
 cin.tie(0);
 cout.tie(0);
@@ -60,25 +62,25 @@ cout.tie(0);
 
 ## important built in functions 
 ### String
-```
-to_string(int)
-stoi(string)
-isalpha(ch)
-isdigit(ch)
+```cpp
+to_string(int);
+stoi(string);
+isalpha(ch);
+isdigit(ch);
 ```
 ### numbers
-```
-min(a,b)
-max(a,b)
-swap(a,b)
-floor(a)
-ceil(a)
-pow(a,b)
-log2(a)
+```cpp
+min(a,b);
+max(a,b);
+swap(a,b);
+floor(a);
+ceil(a);
+pow(a,b);
+log2(a);
 ```
 ### Arrays
 - **basic**
-```
+```cpp
 sort( arr , arr + size);
 reverse( arr, arr + size );
 fill( arr , arr + size , val );
@@ -87,10 +89,10 @@ int MaxValue = *max_element( arr , arr + size );
 int index = find( arr , arr + size , val ) - arr;
 ```
 - **advanced**
-```
-next_permutation( arr , arr + size )
-upper_bound( arr , arr + size , val )
-Returns the address of the first element e when ( e > val ) arr is sorted
+```cpp
+next_permutation( arr , arr + size );
+upper_bound( arr , arr + size , val );
+// Returns the address of the first element e when ( e > val ) arr is sorted
 index = upper_bound(arr,arr+7, 3) - arr;
 value = *upper_bound(arr,arr+7, 3);
 ```
@@ -101,7 +103,7 @@ value = *upper_bound(arr,arr+7, 3);
 ## important functions 
 ### GCD
 Greatest Common Divisor (GCD) or Highest Common Factor (HCF) of two numbers is the largest number that divides both of them. 
-```
+```cpp
 int GCD(int a, int b) {
 	if (!b)return a;
 	return GCD(b, a % b);
@@ -109,12 +111,20 @@ int GCD(int a, int b) {
 ```
 ### LCM
 Least Common Multiple (LCM) of two numbers is the smallest number which can be divided by both numbers. 
-```
-int lcm(int a, int b)
+```cpp
+int LCM(int a, int b)
 {
-    return (a / gcd(a, b)) * b;
+    return (a / GCD(a, b)) * b;
 }
 ```
+## background 
+### ASCII
+| char  | ASCII |
+| ------ | -------- |
+| 0 – 9  | 48 – 57  |
+| A – Z  | 65 – 90  |
+| a – z  | 97 – 122 |
+
 
 
 
