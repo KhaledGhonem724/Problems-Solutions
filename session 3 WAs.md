@@ -8,9 +8,9 @@ using namespace std;
 int main() {
   string sum;
   cin >> sum;
-  vector<int> summands;
+  vector<char> summands;
   for (char c: sum) {
-  summands.push_back(c-'0');
+  summands.push_back(c);
   }
   sort(summands.begin(), summands.end());
   for (int i =0; i < summands.size(); i++) { 
