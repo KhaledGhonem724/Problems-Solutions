@@ -14,7 +14,7 @@ int main() {
   }
   sort(summands.begin(), summands.end());
   for (int i =0; i < summands.size(); i++) { 
-    cout << summands[1]; 
+    cout << summands[i]; 
     if (i != summands.size()-1) {
       cout << "+";
     }
