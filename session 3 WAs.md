@@ -1,4 +1,4 @@
-# A. Helpful Maths
+# [B. Helpful Maths](https://vjudge.net/contest/558712#problem/B)
 ```cpp
 #include <iostream>
 #include <vector> 
@@ -22,7 +22,7 @@ int main() {
   return 0;
 }
 ```
-# C - AC or WA
+# [C - AC or WA](https://vjudge.net/contest/558712#problem/C)
 ```cpp
 #include <iostream>
 using namespace std;
