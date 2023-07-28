@@ -1,4 +1,8 @@
-/** Problem: UVA 12100
+
+```cpp
+
+/*
+Problem: UVA 12100
 Each paper in the queue has a priority (1 to 9).
 Your paper is initially the m'th paper in the queue.
 A paper is poped from the queue, if there is no paper in the queue
@@ -9,7 +13,6 @@ What is the time needed for your paper to get printed?
 */
 
 int f[10];
-
 int main()
 {
     cin.tie(0);
@@ -17,40 +20,30 @@ int main()
     #ifndef ONLINE_JUDGE
     freopen("input.txt", "r", stdin);
     #endif // ONLINE_JUDGE
-
     int T;  cin >> T;
     while(T--)
     {
         clr(f, 0);
-
         int n, pos;   cin >> n >> pos;
         queue<int> q;
-
         loop(n)
         {
             int p;  cin >> p;
             q.push(p);
             f[p] ++;
         }
-
         int highest = 9;
         int time = 0;
         while(1)
         {
             while(f[highest] == 0) highest --;
-
             int p = q.front();    q.pop();
-
-            if(p == highest)
-            {
+            if(p == highest){
                 time ++;
                 f[p] --;
                 if(pos == 0)  break;
                 else pos--;
-            }
-
-            else
-            {
+            }else{
                 q.push(p);
                 if(pos == 0)  pos = q.size()-1;
                 else pos --;
@@ -62,7 +55,7 @@ int main()
 
     return 0;
 }
-
+```
 
 
 
