@@ -49,23 +49,11 @@ int main()
             }else{
                 q.push(p);
                 if(pos == 0)  pos = q.size()-1;
-                else pos --;
+                else pos--;
             }
         }
         cout << time << endl;
     }
-    return 0;
-}
-```
-
-
-
-
-
-
-        cout << time << endl;
-    }
-
     return 0;
 }
 ```
