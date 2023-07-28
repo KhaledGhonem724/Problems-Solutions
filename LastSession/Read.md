@@ -26,9 +26,14 @@ the main goal is to count the apperance of the values in the original array.
 so it can be done if the range of the values in the original array is known.
 ex: the values is (0 < x < 5) 
 ![frequencyArrayFrom0to5](oriFreq0to5.png)
-the preperation of the frequency array can be done by iterate the values of the original array x <br>
-and increment the value of the index x in the frequency array `freq[x]` where x in the element in the original array .
+the preperation of the frequency array can be done by iterate the values of the original array `arr[i]` <br>
+and increment the value of the index x in the frequency array `freq[x]` where x in the element in the original array .<br>
 in other form : `freq[arr[i]]`
+### queue
+the Queue push the elements (add it) from the back.
+the Queue pop the elements (delete it) from the front.
+![queue](queue.png)
+
 ### code
 ```cpp
 int f[10];
