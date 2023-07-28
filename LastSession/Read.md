@@ -19,7 +19,11 @@ What is the time needed for your paper to get printed?
 2- queue (front/back , push/pop)
 
 #### frequancy array
+the main goal is to count the apperance of the values in the original array.
 ![frequancyArray](frequancyArray.png)
+so it can be done if the range of the values in the original array is known.
+ex: the values is (0 < x < 5) 
+![frequancyArrayFrom0to5](oriFreq0to5.png)
 
 ### code
 ```cpp
