@@ -43,7 +43,7 @@ we fill it with the given priorities (fill the queue with values).<br>
 ![intro1](Picture1.png)
 <br>
 also we are given an important card position (index).<br>
-![intro2](intro2.png)
+![intro2](into2.png)
 <br>
 we have some steps to follow ...<br>
 look at the card which is to be poped (شوف الكارت اللي عليها الدور انها تتشال  ) <br>
@@ -52,7 +52,7 @@ it it's not -> push it again to the back.<br>
 Note that : the Poping process takes one unit of time.<br>
 
 **the Question is :** how long whould it take to pop the importatn card ? <br>
-![intro3](intro3.png)
+![intro3](into3.png)
 
 
 ### code
