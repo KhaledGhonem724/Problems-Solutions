@@ -37,9 +37,23 @@ the Queue pop the elements (delete it) from the front.<br><br>
 ![queue](queue.png)
 <br>
 ### problem idea
-the initial situation is that we have an queue.<br>
-we fill it with the given elements.<br>
+the initial situation is that we have an queue of cards.<br>
+each card have a priority (value).<br>
+we fill it with the given priorities (fill the queue with values).<br>
 ![intro1](Picture1.png)
+<br>
+also we are given an important card position (index).<br>
+![intro2](intro2.png)
+<br>
+we have some steps to follow ...<br>
+look at the card which is to be poped (شوف الكارت اللي عليها الدور انها تتشال  ) <br>
+if it is the greatest priority -> pop it .<br>
+it it's not -> push it again to the back.<br>
+Note that : the Poping process takes one unit of time.<br>
+
+**the Question is :** how long whould it take to pop the importatn card ? <br>
+![intro3](intro3.png)
+
 
 ### code
 ```cpp
