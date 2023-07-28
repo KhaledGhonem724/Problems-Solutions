@@ -31,7 +31,7 @@ and increment the value of the index x in the frequency array `freq[x]` where x 
 in other form : `freq[arr[i]]`
 ### queue
 the Queue push the elements (add it) from the back.
-the Queue pop the elements (delete it) from the front.
+the Queue pop the elements (delete it) from the front.<br>
 ![queue](queue.png)
 
 ### code
