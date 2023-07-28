@@ -24,12 +24,12 @@ What is the time needed for your paper to get printed?
 #### frequency  array :
 the main goal is to count the apperance of the values in the original array.
 <p align="center">
-  <img src="frequancyArray.png" width="350" title="hover text">
+  <img src="frequancyArray.png" width="550" title="hover text">
 </p>
 so it can be done if the range of the values in the original array is known.
 ex: the values is (0 < x < 5) 
 <p align="center">
-  <img src="oriFreq0to5.png" width="350" title="hover text">
+  <img src="oriFreq0to5.png" width="550" title="hover text">
 </p>
 the preperation of the frequency array can be done by iterate the values of the original array `arr[i]` <br>
 and increment the value of the index x in the frequency array `freq[x]` where x in the element in the original array .<br>
@@ -39,7 +39,7 @@ in other form : `freq[arr[i]]`
 the Queue push the elements (add it) from the back.<br>
 the Queue pop the elements (delete it) from the front.<br><br>
 <p align="center">
-  <img src="queue.png" width="350" title="hover text">
+  <img src="queue.png" width="550" title="hover text">
 </p>
 <br>
 ### problem idea
