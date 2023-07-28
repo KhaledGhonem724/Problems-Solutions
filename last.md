@@ -1,17 +1,14 @@
-
-```cpp
-
-/*
-Problem: UVA 12100
+# problems
+## Problem : UVA 12100
 Each paper in the queue has a priority (1 to 9).
 Your paper is initially the m'th paper in the queue.
-A paper is poped from the queue, if there is no paper in the queue
-with a higher priority, print it (Takes 1 min.)
-Else, push the paper at the end back of the queue.
-
+A paper is poped from the queue
+if     :    there is no paper in the queue with a higher priority, print it (Takes 1 min).
+Else   :    push the paper at the end back of the queue.
 What is the time needed for your paper to get printed?
-*/
-
+### concepts
+#### 1- frequancy array
+```cpp
 int f[10];
 int main()
 {
@@ -49,10 +46,8 @@ int main()
                 else pos --;
             }
         }
-
         cout << time << endl;
     }
-
     return 0;
 }
 ```
