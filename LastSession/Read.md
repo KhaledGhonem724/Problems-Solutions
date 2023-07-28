@@ -22,11 +22,11 @@ What is the time needed for your paper to get printed?
 3- problem idea
 <br>
 #### frequency  array :
-the main goal is to count the apperance of the values in the original array.
-  <img src="frequancyArray.png" width="550" title="hover text">
-so it can be done if the range of the values in the original array is known.
-ex: the values is (0 < x < 5) 
-  <img src="oriFreq0to5.png" width="550" title="hover text">
+the main goal is to count the apperance of the values in the original array.<br>
+  <img src="frequancyArray.png" width="550" title="hover text"><br>
+so it can be done if the range of the values in the original array is known.<br>
+ex: the values is (0 < x < 5) <br>
+  <img src="oriFreq0to5.png" width="550" title="hover text"><br>
 the preperation of the frequency array can be done by iterate the values of the original array `arr[i]` <br>
 and increment the value of the index x in the frequency array `freq[x]` where x in the element in the original array .<br>
 in other form : `freq[arr[i]]`
