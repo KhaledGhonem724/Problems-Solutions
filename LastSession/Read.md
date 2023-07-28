@@ -14,17 +14,21 @@ if     :    there is no paper in the queue with a higher priority, print it (Tak
 Else   :    push the paper at the end back of the queue.
 What is the time needed for your paper to get printed?
 ### concepts :
-1- frequancy array
+1- frequency  array
 <br>
 2- queue (front/back , push/pop)
-
-#### frequancy array
+<br>
+3- problem idea
+<br>
+#### frequency  array
 the main goal is to count the apperance of the values in the original array.
-![frequancyArray](frequancyArray.png)
+![frequencyArray](frequancyArray.png)<br>
 so it can be done if the range of the values in the original array is known.
 ex: the values is (0 < x < 5) 
-![frequancyArrayFrom0to5](oriFreq0to5.png)
-
+![frequencyArrayFrom0to5](oriFreq0to5.png)
+the preperation of the frequency array can be done by iterate the values of the original array x <br>
+and increment the value of the index x in the frequency array `freq[x]` where x in the element in the original array .
+in other form : `freq[arr[i]]`
 ### code
 ```cpp
 int f[10];
