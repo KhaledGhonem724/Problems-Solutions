@@ -44,9 +44,7 @@ we fill it with the given priorities (fill the queue with values).<br>
 <br>
 also we are given an important card position (index).<br>
 
-<p align="center">
   <img src="into2.png" width="350" title="hover text">
-</p>
 ![intro2](into2.png)
 <br>
 we have some steps to follow ...<br>
