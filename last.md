@@ -1,4 +1,7 @@
 # problems
+## problem : Bars
+
+
 ## Problem : UVA 12100
 Each paper in the queue has a priority (1 to 9).
 Your paper is initially the m'th paper in the queue.
@@ -6,8 +9,10 @@ A paper is poped from the queue
 if     :    there is no paper in the queue with a higher priority, print it (Takes 1 min).
 Else   :    push the paper at the end back of the queue.
 What is the time needed for your paper to get printed?
-### concepts
-#### 1- frequancy array
+### concepts :
+1- frequancy array
+2- queue (front/back , push/pop)
+### code
 ```cpp
 int f[10];
 int main()
@@ -20,15 +25,15 @@ int main()
     int T;  cin >> T;
     while(T--)
     {
-        clr(f, 0);
-        int n, pos;   cin >> n >> pos;
+        memset(f, 0, sizeof(f));
+        int n, pos; cin >> n >> pos;
         queue<int> q;
-        loop(n)
+        for(int i=0;i<n;i++)
         {
-            int p;  cin >> p;
+            int p; cin >> p;
             q.push(p);
             f[p] ++;
-        }
+        } 
         int highest = 9;
         int time = 0;
         while(1)
@@ -54,3 +59,12 @@ int main()
 
 
 
+
+
+
+        cout << time << endl;
+    }
+
+    return 0;
+}
+```
