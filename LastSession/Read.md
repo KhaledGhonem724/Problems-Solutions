@@ -23,14 +23,10 @@ What is the time needed for your paper to get printed?
 <br>
 #### frequency  array :
 the main goal is to count the apperance of the values in the original array.
-<p align="center">
   <img src="frequancyArray.png" width="550" title="hover text">
-</p>
 so it can be done if the range of the values in the original array is known.
 ex: the values is (0 < x < 5) 
-<p align="center">
   <img src="oriFreq0to5.png" width="550" title="hover text">
-</p>
 the preperation of the frequency array can be done by iterate the values of the original array `arr[i]` <br>
 and increment the value of the index x in the frequency array `freq[x]` where x in the element in the original array .<br>
 in other form : `freq[arr[i]]`
@@ -38,23 +34,17 @@ in other form : `freq[arr[i]]`
 ### queue
 the Queue push the elements (add it) from the back.<br>
 the Queue pop the elements (delete it) from the front.<br><br>
-<p align="center">
   <img src="queue.png" width="550" title="hover text">
-</p>
 <br>
 ### problem idea
 the initial situation is that we have an queue of cards.<br>
 each card have a priority (value).<br>
 we fill it with the given priorities (fill the queue with values).<br>
-<p align="center">
   <img src="Picture1.png" width="350" title="hover text">
-</p>
 <br>
 also we are given an important card position (index).<br>
 
-<p align="center">
   <img src="into2.png" width="350" title="hover text">
-</p>
 <br>
 we have some steps to follow ...<br>
 look at the card which is to be poped (شوف الكارت اللي عليها الدور انها تتشال  ) <br>
@@ -63,9 +53,7 @@ it it's not -> push it again to the back.<br>
 Note that : the Poping process takes one unit of time.<br>
 
 **the Question is :** how long whould it take to pop the importatn card ? <br>
-<p align="center">
   <img src="into3.png" width="350" title="hover text">
-</p>
 
 ### code
 ```cpp
