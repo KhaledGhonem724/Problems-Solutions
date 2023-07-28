@@ -45,7 +45,6 @@ we fill it with the given priorities (fill the queue with values).<br>
 also we are given an important card position (index).<br>
 
   <img src="into2.png" width="350" title="hover text">
-<br>
 we have some steps to follow ...<br>
 look at the card which is to be poped (شوف الكارت اللي عليها الدور انها تتشال  ) <br>
 if it is the greatest priority -> pop it .<br>
