@@ -46,7 +46,6 @@ also we are given an important card position (index).<br>
 
 <p align="center">
   <img src="into2.png" width="350" title="hover text">
-  <img src="into2.png" width="350" alt="accessibility text">
 </p>
 ![intro2](into2.png)
 <br>
