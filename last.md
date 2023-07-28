@@ -13,6 +13,10 @@ What is the time needed for your paper to get printed?
 1- frequancy array
 <br>
 2- queue (front/back , push/pop)
+
+#### frequancy array
+![frequancyArray](frequancyArray.png)
+
 ### code
 ```cpp
 int f[10];
