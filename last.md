@@ -11,6 +11,7 @@ Else   :    push the paper at the end back of the queue.
 What is the time needed for your paper to get printed?
 ### concepts :
 1- frequancy array
+<br>
 2- queue (front/back , push/pop)
 ### code
 ```cpp
