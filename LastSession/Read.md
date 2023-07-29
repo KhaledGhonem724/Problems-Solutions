@@ -198,7 +198,9 @@ int main()
     cin >> T;
     while(T--)
     {
-        memset(f, 0, sizeof(f));
+        for(int i=0;i<10;i++){
+          f[i]=0;
+        }
         int n, pos; cin >> n >> pos;
         queue<int> q;
         for(int i=0;i<n;i++)
