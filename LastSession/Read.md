@@ -4,12 +4,46 @@
 
 # problems
 ## problem : Bars ([UVA 12455](https://vjudge.net/problem/UVA-12455))
-> We have some metallic bars, theirs length known (represented by `p` numbers - aka : array ) <br>
+> We have some metallic bars, theirs length known (represented by `p` numbers - aka : `arr` array ) <br>
 > if necessary, we want to solder some of them in order to obtain another one being exactly a given length long. (represented by `n` )
 > No bar can be cut up. Is it possible?
 
+### general solution :
+create a set of all possible values resulted from adding x numbers from the  `arr` array  (where : 0 <= x <= p )<br>
+if `n` is in this set : print `Yes` otherwise print `No` <br>
+
 ### explanation :
-if the wanted
+all possible values : <br>
+assume the `arr` array is `[ 1 , 2 , 4 ]`<br>
+the set of all possible values is : `[ 0 , 1, 2, 4, 3, 6, 5, 7 ] `<br>
+so ... <br> 
+if the wanted value is in this set : print `Yes` <br> 
+else :  print `No` <br> 
+
+### technique :
+as the maximum value of the wanted `n` is 1000 , create a `boolean` array (named for example : 'mk') of 1001 size and initialise it with `false`.<br>
+`mk` will represent all possible values that might exist for 'n' <br>
+set `0` index with true (as it is shared between all possible sets )<br>
+iterate the `arr` array and for each `arr[i]` : 
+  iterate the `mk` array and mark `mk[j]` by setting it to `true` , only if : <br>
+1- `j = 0 + arr[i]` <br>
+2- `j = k + arr[i]` where `mk[k] == true`<br>
+<br>
+if `mk[n]` is `true` : print `Yes` <br> 
+else :  print `No` <br> 
+
+### implementation (on paper) :
+example `arr= [2,5,7,8]`
+#### loop (0) : 
+  <img src="loop0.png" width="550" title="hover text" style="border-style: solid;"><br>
+#### loop (1) : 
+  <img src="loop1.png" width="550" title="hover text"><br>
+#### loop (2) : 
+  <img src="loop2.png" width="550" title="hover text"><br>
+#### loop (3) : 
+  <img src="loop3.png" width="550" title="hover text"><br>
+#### loop (4) : 
+  <img src="loop4.png" width="550" title="hover text"><br>
 
 ## problem : Desorting ([1853A](https://codeforces.com/problemset/problem/1853/A))
 > given an array , allowed to perform one type of operation on it (zero or more times):<br>
