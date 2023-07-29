@@ -3,17 +3,33 @@
 
 
 # problems
-## problem : Bars
+## problem : Bars ([UVA 12455](https://vjudge.net/problem/UVA-12455))
+> We have some metallic bars, theirs length known (represented by `p` numbers - aka : array ) <br>
+> if necessary, we want to solder some of them in order to obtain another one being exactly a given length long. (represented by `n` )
+> No bar can be cut up. Is it possible?
 
+### explanation :
+if the wanted
 
-## Problem : UVA 12100
-Each paper in the queue has a priority (1 to 9).
-Your paper is initially the m'th paper in the queue.
-A paper is poped from the queue
-if     :    there is no paper in the queue with a higher priority, print it (Takes 1 min).
-Else   :    push the paper at the end back of the queue.
-What is the time needed for your paper to get printed?
-<br>
+## problem : Desorting ([1853A](https://codeforces.com/problemset/problem/1853/A))
+> given an array , allowed to perform one type of operation on it (zero or more times):<br>
+> choose an element of index i , add 1 to all elements of index j (0<j<=i)<br>
+> subtract 1 from all elements of index k (i<k)
+> what is the minimum number of operations required to make this array NOT sorted 
+
+### steps :
+1- make sure that the array is sorted (if not : the answer is 0)<br>
+2- search for two elements where the differance between them is minimum<br>
+3- the answer = (differance / 2) + 1<br>
+
+## Problem : Printer Queue ([UVA 12100](https://vjudge.net/problem/UVA-12100))
+> Each paper in the queue has a priority (1 to 9).<br>
+>Your paper is initially the m'th paper in the queue.<br>
+>A paper is poped from the queue<br>
+>if     :    there is no paper in the queue with a higher priority, print it (Takes 1 min).<br>
+>Else   :    push the paper at the end back of the queue.<br>
+>What is the time needed for your paper to get printed?<br>
+
 ### concepts :
 1- frequency  array
 <br>
