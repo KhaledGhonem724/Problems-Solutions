@@ -35,7 +35,7 @@ else :  print `No` <br>
 ### implementation (on paper) :
 example `arr= [2,5,7,8]`
 #### loop (0) : 
-  <img src="loop0.png" width="550" title="hover text" style="border-style: solid;"><br>
+  <img src="loop0.png" width="550" title="hover text" ><br>
 #### loop (1) : 
   <img src="loop1.png" width="550" title="hover text"><br>
 #### loop (2) : 
@@ -44,6 +44,33 @@ example `arr= [2,5,7,8]`
   <img src="loop3.png" width="550" title="hover text"><br>
 #### loop (4) : 
   <img src="loop4.png" width="550" title="hover text"><br>
+<br>
+### implementation (code) :
+```cpp
+int main() {
+    int t, n, p;
+    bool mk[1001];
+    cin >> t;
+    while (t--) {
+        cin >> n >> p;
+        for (int i = 0; i < 1001; i++)
+        {
+            mk[i] = false;
+        }
+        //memset(mk, 0, sizeof mk);
+        mk[0] = 1;
+        for (int i = 0, x; i < p; ++i) {
+            cin >> x;
+            for (int j = 1000 - x; j >= 0; --j)
+
+                mk[j + x] = mk[j + x] || mk[j];
+        }
+        mk[n] ? cout << "YES\n" : cout << "NO\n";
+    }
+    return 0;
+}
+```
+<hr>
 
 ## problem : Desorting ([1853A](https://codeforces.com/problemset/problem/1853/A))
 > given an array , allowed to perform one type of operation on it (zero or more times):<br>
@@ -55,6 +82,46 @@ example `arr= [2,5,7,8]`
 1- make sure that the array is sorted (if not : the answer is 0)<br>
 2- search for two elements where the differance between them is minimum<br>
 3- the answer = (differance / 2) + 1<br>
+
+```cpp
+int main()
+{
+    int t=0;
+    cin >> t;
+    while (t--) {
+        int n = 0;
+        cin >> n;
+        vector<ll>arr(n);
+        for (int i = 0; i < n; i++)
+        {
+            cin >> arr[i];
+        }
+        bool sorted = true;
+        for (int i = 1; i < n; i++)
+        {
+            if (arr[i] < arr[i - 1])
+            {
+                sorted = false;
+                break;
+            }
+        }
+        if (sorted)
+        {
+            ll res = arr[1]-arr[0];
+            for (int i = 1; i < n; i++)
+            {
+                res = min(res, arr[i] - arr[i - 1]);
+            }
+            cout << (res / 2) + 1 << endl;
+        }
+        else {
+            cout << 0 << endl;
+        }
+    }
+}
+```
+
+<hr>
 
 ## Problem : Printer Queue ([UVA 12100](https://vjudge.net/problem/UVA-12100))
 > Each paper in the queue has a priority (1 to 9).<br>
@@ -109,12 +176,8 @@ Note that : the Poping process takes one unit of time.<br>
 int f[10];
 int main()
 {
-    cin.tie(0);
-    cin.sync_with_stdio(0);
-    #ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    #endif // ONLINE_JUDGE
-    int T;  cin >> T;
+    int T;
+    cin >> T;
     while(T--)
     {
         memset(f, 0, sizeof(f));
@@ -128,7 +191,7 @@ int main()
         } 
         int highest = 9;
         int time = 0;
-        while(1)
+        while(true)
         {
             while(f[highest] == 0) highest --;
             int p = q.front();    q.pop();
