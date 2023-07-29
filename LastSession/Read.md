@@ -1,7 +1,25 @@
 # Session Plan
+<ol>
+  <li>qualification day</li>
+  <li>GYM week</li>
+  <li>Problems</li>
+</ol>
 
-
-
+# qualification day
+### from 8:30 AM to 8:30 BM
+08:30 - 09:00 --- Gathering in PUA <br>
+09:00 - 10:00 --- from PUA to AAST<br>
+10:00 - 10:30 --- Gathering in AAST<br>
+10:30 - 12:30 --- Practise<br>
+01:00 - 01:30 --- Lineup <br>
+01:30 - 07:30 --- Contest<br>
+# GYM week
+### contest
+one contest evevry day with 4-7 problems and 24h time limit to solve it.<br>
+General problems - can be on any topic (more like the real contest)<br>
+### solutions
+you can share and ask about solutions in the facebook group [link](https://www.facebook.com/groups/165693479764185/).<br>
+all solutions in one place for each problem.<br><hr> 
 # problems
 ## problem : Bars ([UVA 12455](https://vjudge.net/problem/UVA-12455))
 > We have some metallic bars, theirs length known (represented by `p` numbers - aka : `arr` array ) <br>
