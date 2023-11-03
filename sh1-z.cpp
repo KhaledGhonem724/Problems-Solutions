@@ -1,11 +1,4 @@
-/*
-_/﹋\_
-(҂`_´)
-<,︻╦╤─* - - Khaled Ghonem
-_/﹋\_
-*/
-#include <iostream>
-#include <cmath>
+#include <bits/stdc++.h>
 using namespace std;
 int main() {
 	long long a, b, d, c;
