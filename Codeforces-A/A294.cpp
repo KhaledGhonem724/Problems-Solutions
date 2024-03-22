@@ -1,3 +1,5 @@
+// A. Shaass and Oskols
+// https://codeforces.com/problemset/problem/294/A
 #include <iostream>
 using namespace std;
 int main()
